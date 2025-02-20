@@ -27,12 +27,32 @@ A Kafka Producer `spotify_producer.py` streams Spotify data while a Kafka consum
 ```sh
 git clone https://github.com/Queensdelight/Spotify_streaming_analysis.git
 ```
+## Manage Local Project Virtual Environment
+
+Follow the instructions in [MANAGE-VENV.md](https://github.com/denisecase/buzzline-01-case/blob/main/docs/MANAGE-VENV.md) to:
+1. Create your .venv
+2. Activate .venv
+3. Install the required dependencies using requirements.txt.
 
 ## As Needed: Activate .venv and Install Packages
 
 Run the following commands to activate our local project virtual environment 
-and install necessary packages. 
+and install the necessary packages. 
 Wait for each command to finish before running the next command. 
+
+## One-time Only: Create it 
+
+Use the built in venv utility to create a local project virtual environment in a folder named .venv. 
+
+Windows: 
+```shell
+py -3.11 -m venv .venv
+```
+
+Mac/Linux:
+```zsh
+python3 -3.11 -m venv .venv
+```
 
 Windows: 
 
@@ -72,7 +92,6 @@ Mac/Linux:
 source .venv/bin/activate
 ```
 
-
 ```
 ### **Ensure Dataset is in the correct location, Dataset should be in `data/Spotify_Dataset.csv` if missing move it:***
 ```
@@ -90,7 +109,7 @@ In a terminal (WSL/Mac/Linux):
 
 ```zsh
 cd ~/kafka
-chmod +x zookeeper-server-start.sh
+chmod +x bin/zookeeper-server-start.sh
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 
@@ -106,19 +125,13 @@ Open a NEW terminal. If Windows, open PowerShell and run `wsl` to get a WSL term
 
 ```zsh
 cd ~/kafka
-chmod +x kafka-server-start.sh
+chmod +x binkafka-server-start.sh
 bin/kafka-server-start.sh config/server.properties
 ```
 
 If you do not have Kafka, then follow this process:
 https://github.com/denisecase/buzzline-02-case/blob/main/docs/SETUP-KAFKA.md
 
-## Manage Local Project Virtual Environment
-
-Follow the instructions in [MANAGE-VENV.md](https://github.com/denisecase/buzzline-01-case/blob/main/docs/MANAGE-VENV.md) to:
-1. Create your .venv
-2. Activate .venv
-3. Install the required dependencies using requirements.txt.
 
 ## Start a Kafka Producer
 
