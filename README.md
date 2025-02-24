@@ -167,7 +167,7 @@ Use the commands below to activate .venv, and start the consumer.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.spotify_consumer_case
+py -m consumers.spotify_consumer
 ```
 
 Mac/Linux:
