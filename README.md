@@ -1,4 +1,8 @@
-# 🎵 Spotify Streaming Data Pipeline 
+# Spotify Streaming Data Pipeline 
+
+## Bukola Adeniyan
+
+## February 2025
 
 ## **Overview**
 This project is a real-time streaming data pipeline built using Kafka, SQLite, and Streamlit to analyze Spotify music trends. 
@@ -6,7 +10,7 @@ It allows real-time tracking of streamed songs, sentiment analysis, and genre di
 A Kafka Producer `spotify_producer.py` streams Spotify data while a Kafka consumer `spotify_consumer.py` processes the data, calculates sentiment scores, and stores them in SQLite for real-time analysis.
 
 ## **Features**
-- **Kafka-based Streaming Pipeline**: Streams data from a Spotify dataset in real time.  
+- **Kafka-based Streaming Pipeline**: Streams data from a Spotify dataset in real-time.  
 - **SQLite Database Storage**: Processes and stores data dynamically.  
 - **Sentiment Analysis**: Computes sentiment scores based on song characteristics.  
 - **Interactive Dashboards**:  
@@ -61,6 +65,7 @@ Windows:
 py -m pip install --upgrade pip setuptools wheel
 py -m pip install --upgrade -r requirements.txt
 pip install -r requirements.txt
+pip install pandas matplotlib seaborn
 ```
 
 Mac/Linux: 
