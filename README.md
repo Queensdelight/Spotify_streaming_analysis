@@ -188,7 +188,11 @@ git commit -m "Updated README"
 git push origin main
 ```
 
-![alt text](https://1drv.ms/i/c/697f9e05ef78a63b/EeJiBrPjAlBBvw-fnaCReJoBz909qfQPcIeDi2325lI7kw?e=hgX065)
+![Alt text for image](https://github.com/Queensdelight/Spotify_streaming_analysis/blob/main/images/visualization.png)
+
+![Alt text for image](https://github.com/Queensdelight/Spotify_streaming_analysis/blob/main/images/streaming%20dashboard.png)
+
+![Alt text for image](https://github.com/Queensdelight/Spotify_streaming_analysis/blob/main/images/sentiment%20score%20by%20genre.jpg)
 
 ## Reference
 ## https://www.linkedin.com/in/david-rodriguez-mayorquin-94808117/
